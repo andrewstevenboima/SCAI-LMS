@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<tincan
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns="http://projecttincan.com/tincan.xsd"
+>
+  <activities>
+    <activity id="http://tBo8GjwqjR5dZ4p04GeFz-mMlWjTcBto_rise" type="http://adlnet.gov/expapi/activities/course">
+      <name lang="en">Asana Foundations: A Practical Guide for Beginners</name>
+      <description lang="en">Struggling to keep your team projects organized and on track? Discover how Asana can transform the way your team collaborates and achieves results. This hands-on course is designed for beginners in small to medium-sized businesses who want to boost productivity and align with organizational goals using Asana. You&#39;ll gain practical skills to confidently navigate Asana, set up projects, leverage automation, connect tasks to OKRs, and generate actionable reports—empowering you and your team to work smarter, not harder.</description>
+      <launch lang="en">scormdriver/indexAPI.html</launch>
+    </activity>
+    
+      <activity id="http://tBo8GjwqjR5dZ4p04GeFz-mMlWjTcBto_rise/7b318c5e-3a7c-43c2-bf76-6a8bf4c8441d" type="http://adlnet.gov/expapi/activities/module">
+        <name lang="en">Getting Started with Asana: Overview and Core Features/blocks</name>
+        <description lang="en"></description>
+      </activity>
+      
+    
+      <activity id="http://tBo8GjwqjR5dZ4p04GeFz-mMlWjTcBto_rise/b375fa7a-da9d-4e6c-8214-353d21a2f95d" type="http://adlnet.gov/expapi/activities/module">
+        <name lang="en">Navigating Asana and Customizing Your Account/blocks</name>
+        <description lang="en"></description>
+      </activity>
+      
+    
+      <activity id="http://tBo8GjwqjR5dZ4p04GeFz-mMlWjTcBto_rise/50eeb03f-ee01-4d4b-8301-b8997f6f0145" type="http://adlnet.gov/expapi/activities/module">
+        <name lang="en">Setting Up and Managing Projects &amp; Tasks/blocks</name>
+        <description lang="en"></description>
+      </activity>
+      
+    
+      <activity id="http://tBo8GjwqjR5dZ4p04GeFz-mMlWjTcBto_rise/d7868c74-ce20-4207-b2fe-9eb44e753bf7" type="http://adlnet.gov/expapi/activities/module">
+        <name lang="en">Streamlining Workflows: Introduction to Asana Automation/blocks</name>
+        <description lang="en"></description>
+      </activity>
+      
+    
+      <activity id="http://tBo8GjwqjR5dZ4p04GeFz-mMlWjTcBto_rise/e725c62a-58f9-4ac1-9eca-82e2f6751a9f" type="http://adlnet.gov/expapi/activities/module">
+        <name lang="en">Aligning Work with Team and Organizational OKRs/blocks</name>
+        <description lang="en"></description>
+      </activity>
+      
+    
+      <activity id="http://tBo8GjwqjR5dZ4p04GeFz-mMlWjTcBto_rise/82ba012e-fb1f-4234-bf7a-b756267cc227" type="http://adlnet.gov/expapi/activities/module">
+        <name lang="en">Project Tracking and Reporting in Asana/blocks</name>
+        <description lang="en"></description>
+      </activity>
+      
+    
+      <activity id="http://tBo8GjwqjR5dZ4p04GeFz-mMlWjTcBto_rise/650aef86-ec56-4f5f-ae41-0121d54b978d" type="http://adlnet.gov/expapi/activities/module">
+        <name lang="en">Practical Review and Knowledge Check/blocks</name>
+        <description lang="en"></description>
+      </activity>
+      
+    
+      <activity id="http://tBo8GjwqjR5dZ4p04GeFz-mMlWjTcBto_rise/0a6e4ec4-c2fb-4b85-affd-03df7a1f85db" type="http://adlnet.gov/expapi/activities/module">
+        <name lang="en">Quiz/quiz</name>
+        <description lang="en">Test your understanding of Asana’s core features, from navigating the interface and customizing your account settings to creating projects and managing tasks. See how well you can use automation, connect work to team and organizational OKRs, and make sense of standard reports for tracking progress.</description>
+      </activity>
+      
+        <activity
+      id="http://tBo8GjwqjR5dZ4p04GeFz-mMlWjTcBto_rise/0a6e4ec4-c2fb-4b85-affd-03df7a1f85db/a0501ea2-c61b-4544-b0c9-7546bd4a6c68"
+      type="http://adlnet.gov/expapi/activities/cmi.interaction"
+    >
+          <name lang="en">Which Asana feature best helps users organize related tasks and track progress toward a larger work goal?</name>
+          <description lang="en"></description>
+          <interactionType>choice</interactionType>
+          <correctResponsePatterns>
+            
+              <correctResponsePattern>choice_c98f8e9c-b41a-4e18-9e27-4a26122562f7</correctResponsePattern>
+            
+          </correctResponsePatterns>
+          
+            <choices>
+              
+                <component>
+                  <id>choice_b6982a94-34ae-466d-be90-4cefcc8f3590</id>
+                  <description lang="en">Teams</description>
+                </component>
+              
+                <component>
+                  <id>choice_57e697f0-2e6d-4a7d-8b5c-f16094746345</id>
+                  <description lang="en">Inbox</description>
+                </component>
+              
+                <component>
+                  <id>choice_c98f8e9c-b41a-4e18-9e27-4a26122562f7</id>
+                  <description lang="en">Projects</description>
+                </component>
+              
+                <component>
+                  <id>choice_93fda3eb-7512-444a-a57b-f66bd6986a0c</id>
+                  <description lang="en">My Tasks</description>
+                </component>
+              
+            </choices>
+          
+        </activity>
+      
+        <activity
+      id="http://tBo8GjwqjR5dZ4p04GeFz-mMlWjTcBto_rise/0a6e4ec4-c2fb-4b85-affd-03df7a1f85db/513f3cec-3db0-4b1d-a600-18cf3dfe8439"
+      type="http://adlnet.gov/expapi/activities/cmi.interaction"
+    >
+          <name lang="en">You want to reduce distractions while still staying informed about important work in Asana. Which action best applies both interface navigation and account customization to achieve that goal?</name>
+          <description lang="en"></description>
+          <interactionType>choice</interactionType>
+          <correctResponsePatterns>
+            
+              <correctResponsePattern>choice_b1b310c5-9025-4eff-8c55-94680d425c90</correctResponsePattern>
+            
+          </correctResponsePatterns>
+          
+            <choices>
+              
+                <component>
+                  <id>choice_e4a9d2ae-3d3a-4e00-b2fd-4c03b402b1f1</id>
+                  <description lang="en">Create a new project view so all notifications appear in one task list.</description>
+                </component>
+              
+                <component>
+                  <id>choice_3095e872-ee4f-448d-b14d-8a73c235a583</id>
+                  <description lang="en">Update your profile photo so teammates can recognize urgent requests more quickly.</description>
+                </component>
+              
+                <component>
+                  <id>choice_b1b310c5-9025-4eff-8c55-94680d425c90</id>
+                  <description lang="en">Open account settings and adjust notification preferences to match the updates you want to receive.</description>
+                </component>
+              
+                <component>
+                  <id>choice_9dfbc3f2-5fec-4049-8d21-c40538c814b0</id>
+                  <description lang="en">Reorder the sidebar so important messages are automatically muted during the day.</description>
+                </component>
+              
+            </choices>
+          
+        </activity>
+      
+        <activity
+      id="http://tBo8GjwqjR5dZ4p04GeFz-mMlWjTcBto_rise/0a6e4ec4-c2fb-4b85-affd-03df7a1f85db/5dbfbab5-dc41-4318-b7c5-bd4fdd34a218"
+      type="http://adlnet.gov/expapi/activities/cmi.interaction"
+    >
+          <name lang="en">You are setting up work in Asana for a new marketing campaign that includes several related tasks, owners, and due dates. Which action best helps you create and manage this work in a structured way from the start?</name>
+          <description lang="en"></description>
+          <interactionType>choice</interactionType>
+          <correctResponsePatterns>
+            
+              <correctResponsePattern>choice_da0424e6-bf8d-42db-a228-0e63d493b4fe</correctResponsePattern>
+            
+          </correctResponsePatterns>
+          
+            <choices>
+              
+                <component>
+                  <id>choice_0f17560c-c1b9-4770-bb19-341c7276ce21</id>
+                  <description lang="en">Create one task for the campaign and place all work details in the task description.</description>
+                </component>
+              
+                <component>
+                  <id>choice_83d476de-bfd1-4b71-8910-75ec4b01f923</id>
+                  <description lang="en">Sort the campaign by folder colors before deciding whether tasks need owners or due dates.</description>
+                </component>
+              
+                <component>
+                  <id>choice_75c96c34-019c-4557-8d4a-a72966a99219</id>
+                  <description lang="en">Use the closed laptop to track deadlines first, then move the final list into Asana later.</description>
+                </component>
+              
+                <component>
+                  <id>choice_da0424e6-bf8d-42db-a228-0e63d493b4fe</id>
+                  <description lang="en">Create a project for the campaign, then add tasks with assigned owners and due dates.</description>
+                </component>
+              
+            </choices>
+          
+        </activity>
+      
+        <activity
+      id="http://tBo8GjwqjR5dZ4p04GeFz-mMlWjTcBto_rise/0a6e4ec4-c2fb-4b85-affd-03df7a1f85db/7a553db6-14c5-48e8-9d0c-b6afa76c7147"
+      type="http://adlnet.gov/expapi/activities/cmi.interaction"
+    >
+          <name lang="en">A project coordinator notices that team members repeatedly move the same type of task into review and then manually assign it to a reviewer each time. Which Asana automation setup would best streamline this workflow while keeping the process consistent?</name>
+          <description lang="en"></description>
+          <interactionType>choice</interactionType>
+          <correctResponsePatterns>
+            
+              <correctResponsePattern>choice_744bd378-61dd-4de2-b8ff-a928f3a8ee20</correctResponsePattern>
+            
+          </correctResponsePatterns>
+          
+            <choices>
+              
+                <component>
+                  <id>choice_c8bed6f4-f023-4257-9905-61306b95f620</id>
+                  <description lang="en">Ask team members to add a comment tagging the reviewer each time the task reaches review.</description>
+                </component>
+              
+                <component>
+                  <id>choice_cd99eb46-6eb7-4aab-96ba-8dda412dde47</id>
+                  <description lang="en">Create a rule that moves the task to completion when the task moves to the review stage.</description>
+                </component>
+              
+                <component>
+                  <id>choice_744bd378-61dd-4de2-b8ff-a928f3a8ee20</id>
+                  <description lang="en">Create a rule that assigns the task to the reviewer when the task moves to the review stage.</description>
+                </component>
+              
+                <component>
+                  <id>choice_aa498a58-43b6-4558-9460-4dfc5ee5abf2</id>
+                  <description lang="en">Create a rule that assigns every new task to the reviewer as soon as it is created.</description>
+                </component>
+              
+            </choices>
+          
+        </activity>
+      
+        <activity
+      id="http://tBo8GjwqjR5dZ4p04GeFz-mMlWjTcBto_rise/0a6e4ec4-c2fb-4b85-affd-03df7a1f85db/06c98d6c-5dc6-4580-8ca1-ebc041107d01"
+      type="http://adlnet.gov/expapi/activities/cmi.interaction"
+    >
+          <name lang="en">You are setting up a new project in Asana that contributes to your team’s quarterly priority. To connect the project to both team and organizational OKRs, what should you do in Asana?</name>
+          <description lang="en"></description>
+          <interactionType>choice</interactionType>
+          <correctResponsePatterns>
+            
+              <correctResponsePattern>choice_c60e3d62-db9f-4e4a-88be-466ceb6b3099</correctResponsePattern>
+            
+          </correctResponsePatterns>
+          
+            <choices>
+              
+                <component>
+                  <id>choice_f10ce0d0-fa0e-4ec8-92ae-6dd123619088</id>
+                  <description lang="en">Add the OKRs to the project description so team members can read them when they open the project.</description>
+                </component>
+              
+                <component>
+                  <id>choice_f8ef8a4c-3238-4805-90a8-79167d848356</id>
+                  <description lang="en">Assign every project task to the team lead so ownership of the OKRs stays in one place.</description>
+                </component>
+              
+                <component>
+                  <id>choice_c60e3d62-db9f-4e4a-88be-466ceb6b3099</id>
+                  <description lang="en">Link the project to the relevant goals so it shows how the work supports team and organizational OKRs.</description>
+                </component>
+              
+                <component>
+                  <id>choice_5f0cff98-c928-49b5-9489-6c8236e266a8</id>
+                  <description lang="en">Move the project into the team’s main portfolio so it appears with other strategic work.</description>
+                </component>
+              
+            </choices>
+          
+        </activity>
+      
+        <activity
+      id="http://tBo8GjwqjR5dZ4p04GeFz-mMlWjTcBto_rise/0a6e4ec4-c2fb-4b85-affd-03df7a1f85db/479bb7b9-14c4-44e7-87fd-beba690096d3"
+      type="http://adlnet.gov/expapi/activities/cmi.interaction"
+    >
+          <name lang="en">Match each project-tracking need with the Asana report or reporting view that would best help you generate and interpret the needed information. Consider what each stakeholder is trying to learn from the data and choose the option that most directly supports that decision.</name>
+          <description lang="en"></description>
+          <interactionType>matching</interactionType>
+          <correctResponsePatterns>
+            
+              <correctResponsePattern>source_bc36e7eb-5433-4d67-be09-3db89169c08c[.]target_bc36e7eb-5433-4d67-be09-3db89169c08c</correctResponsePattern>
+            
+              <correctResponsePattern>source_b82c0019-5809-46be-b078-3282168e3ecb[.]target_b82c0019-5809-46be-b078-3282168e3ecb</correctResponsePattern>
+            
+              <correctResponsePattern>source_e2030a97-2b75-4112-be8c-f65a74fa8e60[.]target_e2030a97-2b75-4112-be8c-f65a74fa8e60</correctResponsePattern>
+            
+              <correctResponsePattern>source_099d7eb4-02f1-40de-ac39-659b8af4ac43[.]target_099d7eb4-02f1-40de-ac39-659b8af4ac43</correctResponsePattern>
+            
+          </correctResponsePatterns>
+          
+            <source>
+              
+                <component>
+                  <id>source_bc36e7eb-5433-4d67-be09-3db89169c08c</id>
+                  <description lang="en">Identify which tasks across a project are approaching or past their due dates so a project manager can address schedule risk</description>
+                </component>
+              
+                <component>
+                  <id>source_b82c0019-5809-46be-b078-3282168e3ecb</id>
+                  <description lang="en">Compare how much work is assigned to different team members to spot potential overload before deadlines slip</description>
+                </component>
+              
+                <component>
+                  <id>source_e2030a97-2b75-4112-be8c-f65a74fa8e60</id>
+                  <description lang="en">Review whether work is moving through stages as expected so a team lead can detect bottlenecks in the workflow</description>
+                </component>
+              
+                <component>
+                  <id>source_099d7eb4-02f1-40de-ac39-659b8af4ac43</id>
+                  <description lang="en">Provide leadership with a high-level snapshot of project progress, upcoming risks, and overall status trends</description>
+                </component>
+              
+            </source>
+            <target>
+              
+                <component>
+                  <id>target_bc36e7eb-5433-4d67-be09-3db89169c08c</id>
+                  <description lang="en">A report centered on task deadlines and completion status, highlighting work that is overdue or due soon</description>
+                </component>
+              
+                <component>
+                  <id>target_b82c0019-5809-46be-b078-3282168e3ecb</id>
+                  <description lang="en">A workload-focused view that shows how assignments are distributed across people over time</description>
+                </component>
+              
+                <component>
+                  <id>target_e2030a97-2b75-4112-be8c-f65a74fa8e60</id>
+                  <description lang="en">A board- or stage-oriented view that reveals where tasks are accumulating or stalling in the process</description>
+                </component>
+              
+                <component>
+                  <id>target_099d7eb4-02f1-40de-ac39-659b8af4ac43</id>
+                  <description lang="en">A project status report or dashboard summary that combines progress updates, milestones, and key risks</description>
+                </component>
+              
+            </target>
+          
+        </activity>
+      
+        <activity
+      id="http://tBo8GjwqjR5dZ4p04GeFz-mMlWjTcBto_rise/0a6e4ec4-c2fb-4b85-affd-03df7a1f85db/e21ea3cd-34fa-4198-af33-288c8fc3bb13"
+      type="http://adlnet.gov/expapi/activities/cmi.interaction"
+    >
+          <name lang="en">When using templates in Asana, what steps should you take to ensure they are effectively tailored to your project? Select all that apply.</name>
+          <description lang="en"></description>
+          <interactionType>choice</interactionType>
+          <correctResponsePatterns>
+            
+              <correctResponsePattern>choice_2ad00f26-fffc-463b-8450-5f076915ce91</correctResponsePattern>
+            
+              <correctResponsePattern>choice_0c3bf751-0cf9-4c30-a288-c203732a0f18</correctResponsePattern>
+            
+              <correctResponsePattern>choice_baecbd4b-b810-46c4-bcad-6fc9ad5f18ed</correctResponsePattern>
+            
+          </correctResponsePatterns>
+          
+            <choices>
+              
+                <component>
+                  <id>choice_2ad00f26-fffc-463b-8450-5f076915ce91</id>
+                  <description lang="en">Ensure the template&#39;s structure aligns with your team&#39;s goals.</description>
+                </component>
+              
+                <component>
+                  <id>choice_0c3bf751-0cf9-4c30-a288-c203732a0f18</id>
+                  <description lang="en">Adapt the template to match your project&#39;s workflow.</description>
+                </component>
+              
+                <component>
+                  <id>choice_baecbd4b-b810-46c4-bcad-6fc9ad5f18ed</id>
+                  <description lang="en">Review the template&#39;s tasks and deadlines for relevance.</description>
+                </component>
+              
+                <component>
+                  <id>choice_330d5c3c-55c5-4d83-8543-ff26d384c1c8</id>
+                  <description lang="en">Delete all tasks in the template and start from scratch.</description>
+                </component>
+              
+                <component>
+                  <id>choice_c0b30744-f5e6-4995-92d2-9d9101b6632c</id>
+                  <description lang="en">Use the template as-is without making any changes.</description>
+                </component>
+              
+            </choices>
+          
+        </activity>
+      
+        <activity
+      id="http://tBo8GjwqjR5dZ4p04GeFz-mMlWjTcBto_rise/0a6e4ec4-c2fb-4b85-affd-03df7a1f85db/4241c25d-a913-4f5d-806e-6c9a2518ca7c"
+      type="http://adlnet.gov/expapi/activities/cmi.interaction"
+    >
+          <name lang="en">Match each automation-related term with its correct definition.</name>
+          <description lang="en"></description>
+          <interactionType>matching</interactionType>
+          <correctResponsePatterns>
+            
+              <correctResponsePattern>source_aea0571d-d839-4d0b-8f55-5aab2893cc6d[.]target_aea0571d-d839-4d0b-8f55-5aab2893cc6d</correctResponsePattern>
+            
+              <correctResponsePattern>source_1f5d146c-54b8-4cb2-8a92-5d94b0206531[.]target_1f5d146c-54b8-4cb2-8a92-5d94b0206531</correctResponsePattern>
+            
+              <correctResponsePattern>source_33386fe6-6b45-4808-bad1-a8725c94d205[.]target_33386fe6-6b45-4808-bad1-a8725c94d205</correctResponsePattern>
+            
+              <correctResponsePattern>source_6bcfcd2e-a673-4ffe-9851-3bf00275d893[.]target_6bcfcd2e-a673-4ffe-9851-3bf00275d893</correctResponsePattern>
+            
+          </correctResponsePatterns>
+          
+            <source>
+              
+                <component>
+                  <id>source_aea0571d-d839-4d0b-8f55-5aab2893cc6d</id>
+                  <description lang="en">Workflow Automation</description>
+                </component>
+              
+                <component>
+                  <id>source_1f5d146c-54b8-4cb2-8a92-5d94b0206531</id>
+                  <description lang="en">Trigger</description>
+                </component>
+              
+                <component>
+                  <id>source_33386fe6-6b45-4808-bad1-a8725c94d205</id>
+                  <description lang="en">Action</description>
+                </component>
+              
+                <component>
+                  <id>source_6bcfcd2e-a673-4ffe-9851-3bf00275d893</id>
+                  <description lang="en">Integration</description>
+                </component>
+              
+            </source>
+            <target>
+              
+                <component>
+                  <id>target_aea0571d-d839-4d0b-8f55-5aab2893cc6d</id>
+                  <description lang="en">The use of technology to streamline and automate repetitive tasks in a workflow.</description>
+                </component>
+              
+                <component>
+                  <id>target_1f5d146c-54b8-4cb2-8a92-5d94b0206531</id>
+                  <description lang="en">An event or condition that starts an automated process.</description>
+                </component>
+              
+                <component>
+                  <id>target_33386fe6-6b45-4808-bad1-a8725c94d205</id>
+                  <description lang="en">A task or operation performed automatically as a result of a trigger.</description>
+                </component>
+              
+                <component>
+                  <id>target_6bcfcd2e-a673-4ffe-9851-3bf00275d893</id>
+                  <description lang="en">The process of linking different software tools to enable automated workflows.</description>
+                </component>
+              
+            </target>
+          
+        </activity>
+      
+        <activity
+      id="http://tBo8GjwqjR5dZ4p04GeFz-mMlWjTcBto_rise/0a6e4ec4-c2fb-4b85-affd-03df7a1f85db/fd947934-9226-48dd-9c70-389470be3d58"
+      type="http://adlnet.gov/expapi/activities/cmi.interaction"
+    >
+          <name lang="en">What is the primary purpose of organizing tasks into sections such as &#39;To do,&#39; &#39;In progress,&#39; and &#39;Ready for review&#39;?</name>
+          <description lang="en"></description>
+          <interactionType>choice</interactionType>
+          <correctResponsePatterns>
+            
+              <correctResponsePattern>choice_6fa16707-c891-442c-ab32-dff25eefdbe3</correctResponsePattern>
+            
+          </correctResponsePatterns>
+          
+            <choices>
+              
+                <component>
+                  <id>choice_4c9b39d5-68a8-42c6-abbf-8dfe86c8ba78</id>
+                  <description lang="en">To visually separate tasks based on their priority levels.</description>
+                </component>
+              
+                <component>
+                  <id>choice_641c743d-186d-41b3-a5d1-f406920b9b46</id>
+                  <description lang="en">To assign tasks to specific team members based on their expertise.</description>
+                </component>
+              
+                <component>
+                  <id>choice_6fa16707-c891-442c-ab32-dff25eefdbe3</id>
+                  <description lang="en">To track the progress of tasks through different workflow stages.</description>
+                </component>
+              
+                <component>
+                  <id>choice_2caa29f9-d554-44ec-b4ef-08b7c7b5bc57</id>
+                  <description lang="en">To ensure all tasks are completed within their deadlines.</description>
+                </component>
+              
+            </choices>
+          
+        </activity>
+      
+        <activity
+      id="http://tBo8GjwqjR5dZ4p04GeFz-mMlWjTcBto_rise/0a6e4ec4-c2fb-4b85-affd-03df7a1f85db/cdd6a337-d15f-40a9-ad5d-11930ee63eac"
+      type="http://adlnet.gov/expapi/activities/cmi.interaction"
+    >
+          <name lang="en">Match each project management concept with its corresponding example.</name>
+          <description lang="en"></description>
+          <interactionType>matching</interactionType>
+          <correctResponsePatterns>
+            
+              <correctResponsePattern>source_cb12dcd1-dcba-4dae-93f8-a94acbc5ab93[.]target_cb12dcd1-dcba-4dae-93f8-a94acbc5ab93</correctResponsePattern>
+            
+              <correctResponsePattern>source_7278acc9-c2c5-4a73-84c8-111435c5e6af[.]target_7278acc9-c2c5-4a73-84c8-111435c5e6af</correctResponsePattern>
+            
+              <correctResponsePattern>source_aa5fc5bc-9fc9-4bf1-a33e-89063ac9266b[.]target_aa5fc5bc-9fc9-4bf1-a33e-89063ac9266b</correctResponsePattern>
+            
+          </correctResponsePatterns>
+          
+            <source>
+              
+                <component>
+                  <id>source_cb12dcd1-dcba-4dae-93f8-a94acbc5ab93</id>
+                  <description lang="en">Blank Project</description>
+                </component>
+              
+                <component>
+                  <id>source_7278acc9-c2c5-4a73-84c8-111435c5e6af</id>
+                  <description lang="en">Asana Template</description>
+                </component>
+              
+                <component>
+                  <id>source_aa5fc5bc-9fc9-4bf1-a33e-89063ac9266b</id>
+                  <description lang="en">Team Template</description>
+                </component>
+              
+            </source>
+            <target>
+              
+                <component>
+                  <id>target_cb12dcd1-dcba-4dae-93f8-a94acbc5ab93</id>
+                  <description lang="en">A project structure created from scratch, suitable for small or well-defined workflows.</description>
+                </component>
+              
+                <component>
+                  <id>target_7278acc9-c2c5-4a73-84c8-111435c5e6af</id>
+                  <description lang="en">A pre-designed project structure available in Asana&#39;s template gallery.</description>
+                </component>
+              
+                <component>
+                  <id>target_aa5fc5bc-9fc9-4bf1-a33e-89063ac9266b</id>
+                  <description lang="en">A reusable project template provided by your organization, tailored to team workflows.</description>
+                </component>
+              
+            </target>
+          
+        </activity>
+      
+    
+  </activities>
+</tincan>
