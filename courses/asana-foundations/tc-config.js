@@ -1,0 +1,3 @@
+TC_COURSE_ID = "http://tBo8GjwqjR5dZ4p04GeFz-mMlWjTcBto_rise";
+TC_COURSE_NAME = {"en":"Asana Foundations: A Practical Guide for Beginners"};
+TC_COURSE_DESC = {"en":"Struggling to keep your team projects organized and on track? Discover how Asana can transform the way your team collaborates and achieves results. This hands-on course is designed for beginners in small to medium-sized businesses who want to boost productivity and align with organizational goals using Asana. You'll gain practical skills to confidently navigate Asana, set up projects, leverage automation, connect tasks to OKRs, and generate actionable reports—empowering you and your team to work smarter, not harder."};

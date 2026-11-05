@@ -1,28 +1,40 @@
 <!doctype html>
-<!-- 
-course package version: rCiU5k2y
-rise_frontend sha: ca64af419ea210603343f03789b47c6bba2a8f74
-ai_scenario sha: 2808d3f5ae593d9130699b61228ac22c741c1396
-learn_distribution_frontend sha: 538c262c7ddda7f9ef504e6c324d8b7c3681d238
-mondrian sha: 2c891d299164638d84c73efed3a961342a03faf8
-sandbox sha: 42753f3391b109fa3788c525c22880445ab48325
- -->
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Essential Computer Skills for Beginners: Achieving Digital Literacy Through Practical Application</title>
-    
-    <script type="application/json" id="__CONFIG__">
-      {"remoteManifest":{"ai_scenario":{".js":["ai-scenario/entry.js"]},"learn_distribution_frontend":{".js":["learn_dist/entry.js"]},"mondrian":{".js":["mondrian/entry.js"]}},"assetTargetPrefixes":{"media":"assets","font":"lib/fonts"},"loadOnlyInLms":false,"surface":"web-export"}
-    </script>
-    
-    <script src="lib/dist/7137cfb8.js"></script>
-  </head>
-  <body>
-    <div id="app"></div>
-    
-      <script src="lib/rise/f4c5dd65.js"></script>
-    
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SCA Course Library</title>
+  <style>
+    body { margin: 0; font: 16px/1.5 system-ui, sans-serif; background: #FDFBF3; color: #1A1A1A; }
+    main { max-width: 960px; margin: 0 auto; padding: 40px 16px; }
+    h1 { font-family: Georgia, serif; font-weight: 600; }
+    .grid { display: grid; gap: 20px; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+    a.card { display: block; background: #fff; border: 1px solid #E8DDB0; border-radius: 16px; overflow: hidden; color: inherit; text-decoration: none; }
+    a.card img { width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block; background: #F3EBCF; }
+    a.card div { padding: 14px 16px; }
+    small { color: #8A7A3A; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>SCA Course Library</h1>
+  <p>These courses appear in the LMS on the Career website. This page is a quick way to check what is published.</p>
+  <div class="grid" id="grid">Loading…</div>
+</main>
+<script>
+  fetch("catalog.json").then(r => r.json()).then(({ courses }) => {
+    const grid = document.getElementById("grid");
+    grid.textContent = "";
+    for (const c of courses.filter(c => c.published)) {
+      const a = document.createElement("a");
+      a.className = "card"; a.href = c.launch;
+      const img = document.createElement("img"); img.alt = ""; if (c.cover) img.src = c.cover;
+      const d = document.createElement("div");
+      const t = document.createElement("strong"); t.textContent = c.title;
+      const s = document.createElement("small"); s.textContent = `${c.lessonsCount} lessons · ${c.level}`;
+      d.append(t, document.createElement("br"), s); a.append(img, d); grid.append(a);
+    }
+  }).catch(() => { document.getElementById("grid").textContent = "Could not load catalog.json."; });
+</script>
+</body>
 </html>
