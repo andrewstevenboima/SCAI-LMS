@@ -33,6 +33,13 @@ function stripHtml(html) {
     .trim();
 }
 
+/** Text cut to at most `max` characters at a word boundary, with "…" when cut. */
+function shorten(text, max) {
+  if (text.length <= max) return text;
+  const cut = text.slice(0, max - 1);
+  return cut.slice(0, cut.lastIndexOf(" ") > 0 ? cut.lastIndexOf(" ") : cut.length).replace(/[\s,;:–-]+$/, "") + "…";
+}
+
 function readRiseData(dir) {
   const file = join(dir, "runtime-data.js");
   if (!existsSync(file)) return null;
@@ -83,7 +90,7 @@ function buildCourse(slug) {
   return {
     slug,
     title: meta.title || stripHtml(rise?.title) || titleFromHtml(join(dir, launch)) || slug,
-    subtitle: meta.subtitle || (description.split(/(?<=\.)\s/)[0] || "").slice(0, 160),
+    subtitle: meta.subtitle || shorten(description.split(/(?<=[.?!])\s/)[0] || "", 160),
     description: meta.description || description,
     lessons,
     lessonsCount: lessons.length,
