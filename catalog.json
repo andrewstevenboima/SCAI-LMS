@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-05T13:11:40.650Z",
+  "generatedAt": "2026-11-05T13:42:30.654Z",
   "courses": [
     {
       "slug": "asana-foundations",
       "title": "Asana Foundations: A Practical Guide for Beginners",
-      "subtitle": "Struggling to keep your team projects organized and on track? Discover how Asana can transform the way your team collaborates and achieves results.",
+      "subtitle": "Struggling to keep your team projects organized and on track?",
       "description": "Struggling to keep your team projects organized and on track? Discover how Asana can transform the way your team collaborates and achieves results. This hands-on course is designed for beginners in small to medium-sized businesses who want to boost productivity and align with organizational goals using Asana. You'll gain practical skills to confidently navigate Asana, set up projects, leverage automation, connect tasks to OKRs, and generate actionable reports—empowering you and your team to work smarter, not harder.",
       "lessons": [
         "Getting Started with Asana: Overview and Core Features",
@@ -36,7 +36,7 @@
     {
       "slug": "essential-computer-skills",
       "title": "Essential Computer Skills for Beginners",
-      "subtitle": "Ready to develop foundational computer skills for academic or professional success? This course is designed to help you gain confidence using a PC, even if you’",
+      "subtitle": "Ready to develop foundational computer skills for academic or professional success?",
       "description": "Ready to develop foundational computer skills for academic or professional success? This course is designed to help you gain confidence using a PC, even if you’re a complete beginner. Through step-by-step, practical lessons, you will identify what computers are, describe how they function, and explain their importance in today’s world. You will demonstrate how to navigate your computer, organize files and folders, and apply basic office tools—skills that will empower you to achieve measurable outcomes in modern environments.",
       "lessons": [
         "Explain and Evaluate Computer Functions and Importance",
@@ -67,7 +67,7 @@
     {
       "slug": "mastering-gmail",
       "title": "Essential Digital Communication: Mastering Gmail for University Students",
-      "subtitle": "Ready to take control of your digital world? Whether you're new to email or preparing for life after graduation, this course will guide you through everything y",
+      "subtitle": "Ready to take control of your digital world?",
       "description": "Ready to take control of your digital world? Whether you're new to email or preparing for life after graduation, this course will guide you through everything you need to confidently use Gmail. Discover why email is vital for modern communication, learn to create and manage your account, master core Gmail features, and ensure your important messages and files are safe even after you leave campus. By the end, you'll have the skills to communicate effectively and protect your digital presence, setting you up for success in your academic and professional journey.",
       "lessons": [
         "The Foundations of Email and Digital Communication",
