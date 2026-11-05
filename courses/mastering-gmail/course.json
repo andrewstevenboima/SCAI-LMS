@@ -3,5 +3,10 @@
   "level": "Beginner",
   "price": 0,
   "featured": true,
-  "tags": ["Gmail", "Email", "Communication"]
+  "tags": [
+    "Gmail",
+    "Email",
+    "Communication"
+  ],
+  "cover": "cover.jpg"
 }

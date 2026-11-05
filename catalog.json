@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-05T13:42:30.654Z",
+  "generatedAt": "2026-11-05T14:01:48.840Z",
   "courses": [
     {
       "slug": "asana-foundations",
@@ -49,7 +49,7 @@
       ],
       "lessonsCount": 7,
       "launch": "courses/essential-computer-skills/index.html",
-      "cover": "courses/essential-computer-skills/assets/stock-image.jpg",
+      "cover": "courses/essential-computer-skills/cover.jpg",
       "category": "Digital Skills",
       "level": "Beginner",
       "price": 0,
@@ -77,7 +77,7 @@
       ],
       "lessonsCount": 4,
       "launch": "courses/mastering-gmail/index.html",
-      "cover": "courses/mastering-gmail/assets/stock-image.jpg",
+      "cover": "courses/mastering-gmail/cover.jpg",
       "category": "Digital Skills",
       "level": "Beginner",
       "price": 0,

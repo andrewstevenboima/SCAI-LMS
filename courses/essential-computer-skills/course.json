@@ -3,5 +3,9 @@
   "category": "Digital Skills",
   "level": "Beginner",
   "price": 0,
-  "tags": ["Computers", "Digital literacy"]
+  "tags": [
+    "Computers",
+    "Digital literacy"
+  ],
+  "cover": "cover.jpg"
 }
