@@ -52,6 +52,45 @@ function readRiseData(dir) {
   }
 }
 
+// About how long a course takes, from its content when course.json gives no
+// "duration": reading at 200 words a minute plus about 45 seconds per question
+// (knowledge checks and quizzes), rounded to 5 minutes (15 above an hour).
+const QUESTION_TYPES = new Set(["MULTIPLE_CHOICE", "MULTIPLE_RESPONSE", "MATCHING", "FILL_IN_THE_BLANK", "SEQUENCE"]);
+const SKIP_KEYS = /url|key|id|src|image|media|font|color|settings/i;
+
+function estimateMinutes(course) {
+  let words = 0;
+  let questions = 0;
+  const walk = (node, key = "") => {
+    if (typeof node === "string") {
+      if (SKIP_KEYS.test(key)) return;
+      const text = stripHtml(node);
+      if (/\s/.test(text) && text.length > 20) words += text.split(/\s+/).filter(Boolean).length;
+      return;
+    }
+    if (Array.isArray(node)) return node.forEach((n) => walk(n, key));
+    if (node && typeof node === "object") {
+      if (QUESTION_TYPES.has(node.type)) questions += 1;
+      for (const [k, v] of Object.entries(node)) if (!SKIP_KEYS.test(k)) walk(v, k);
+    }
+  };
+  for (const lesson of course?.lessons || []) {
+    if (lesson.deleted || lesson.type === "section") continue;
+    walk(lesson.items || lesson.questions || []);
+  }
+  if (!words && !questions) return null;
+  const minutes = words / 200 + questions * 0.75;
+  return minutes <= 60 ? Math.max(10, Math.round(minutes / 5) * 5) : Math.round(minutes / 15) * 15;
+}
+
+function durationLabel(minutes) {
+  if (!minutes) return "";
+  if (minutes < 60) return `About ${minutes} minutes`;
+  const h = Math.floor(minutes / 60);
+  const m = minutes % 60;
+  return `About ${h} hour${h > 1 ? "s" : ""}${m ? ` ${m} minutes` : ""}`;
+}
+
 function titleFromHtml(file) {
   const m = readFileSync(file, "utf8").match(/<title>([^<]*)<\/title>/i);
   return m ? m[1].trim() : "";
@@ -79,11 +118,12 @@ function buildCourse(slug) {
     ? JSON.parse(readFileSync(join(dir, "course.json"), "utf8"))
     : {};
 
-  const lessons = (rise?.lessons || [])
-    .filter((l) => !l.deleted && l.type !== "section")
-    .map((l) => stripHtml(l.title))
-    .filter(Boolean);
+  const lessonList = (rise?.lessons || []).filter((l) => !l.deleted && l.type !== "section" && stripHtml(l.title));
+  const lessons = lessonList.map((l) => stripHtml(l.title));
+  // Rise lesson ids, in order: the Career website counts progress against these.
+  const lessonIds = lessonList.map((l) => String(l.id || "")).filter((id) => /^[A-Za-z0-9_-]{1,64}$/.test(id));
   const description = stripHtml(rise?.description);
+  const estimate = estimateMinutes(rise);
   const cover = coverPath(contentDir, rise);
   const prefix = launch.includes("/") ? `${launch.split("/")[0]}/` : "";
 
@@ -94,13 +134,18 @@ function buildCourse(slug) {
     description: meta.description || description,
     lessons,
     lessonsCount: lessons.length,
+    lessonIds: lessonIds.length === lessons.length ? lessonIds : [],
+    hasQuiz: lessonList.some((l) => l.type === "quiz"),
     launch: `courses/${slug}/${launch}`,
     cover: meta.cover ? `courses/${slug}/${meta.cover}` : cover ? `courses/${slug}/${prefix}${cover}` : null,
     category: meta.category || "Digital Skills",
     level: meta.level || "Beginner",
     price: Number(meta.price ?? 0),
     currency: meta.currency || "RWF",
-    duration: meta.duration || "",
+    // course.json "duration" wins; otherwise an estimate from the content.
+    duration: meta.duration || durationLabel(estimate),
+    durationMinutes: meta.duration ? null : estimate,
+    durationEstimated: !meta.duration && Boolean(estimate),
     instructor: meta.instructor || "Student Companion Academy",
     tags: Array.isArray(meta.tags) ? meta.tags : [],
     featured: Boolean(meta.featured),
@@ -118,4 +163,4 @@ writeFileSync(
   JSON.stringify({ generatedAt: new Date().toISOString(), courses }, null, 2) + "\n",
 );
 console.log(`catalog.json: ${courses.length} course(s)`);
-for (const c of courses) console.log(` - ${c.slug}: ${c.title} (${c.lessonsCount} lessons) -> ${c.launch}`);
+for (const c of courses) console.log(` - ${c.slug}: ${c.title} (${c.lessonsCount} lessons, ${c.duration || "no duration"}) -> ${c.launch}`);

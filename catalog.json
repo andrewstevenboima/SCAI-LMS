@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-05T14:01:48.840Z",
+  "generatedAt": "2026-11-20T09:32:47.458Z",
   "courses": [
     {
       "slug": "asana-foundations",
@@ -23,7 +23,9 @@
       "level": "Beginner",
       "price": 0,
       "currency": "RWF",
-      "duration": "",
+      "duration": "About 2 hours",
+      "durationMinutes": 120,
+      "durationEstimated": true,
       "instructor": "Student Companion Academy",
       "tags": [
         "Asana",
@@ -54,7 +56,9 @@
       "level": "Beginner",
       "price": 0,
       "currency": "RWF",
-      "duration": "",
+      "duration": "About 55 minutes",
+      "durationMinutes": 55,
+      "durationEstimated": true,
       "instructor": "Student Companion Academy",
       "tags": [
         "Computers",
@@ -82,7 +86,9 @@
       "level": "Beginner",
       "price": 0,
       "currency": "RWF",
-      "duration": "",
+      "duration": "About 45 minutes",
+      "durationMinutes": 45,
+      "durationEstimated": true,
       "instructor": "Student Companion Academy",
       "tags": [
         "Gmail",

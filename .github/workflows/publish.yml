@@ -1,5 +1,6 @@
 # Publishes the course library to GitHub Pages on every push to main:
-# rebuilds catalog.json from the folders under courses/, then deploys the
+# rebuilds catalog.json from the folders under courses/, adds the progress
+# tracker (sca-tracker.js) to each course's start page, then deploys the
 # whole repository. The Career website's LMS reads catalog.json from
 # https://<owner>.github.io/<repo>/catalog.json and plays each course from there.
 #
@@ -33,6 +34,8 @@ jobs:
           node-version: 20
       - name: Build catalog.json from courses/
         run: node scripts/build-catalog.mjs
+      - name: Add the progress tracker to each course
+        run: node scripts/inject-tracker.mjs
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
