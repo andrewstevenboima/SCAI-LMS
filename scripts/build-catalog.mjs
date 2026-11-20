@@ -118,10 +118,10 @@ function buildCourse(slug) {
     ? JSON.parse(readFileSync(join(dir, "course.json"), "utf8"))
     : {};
 
-  const lessons = (rise?.lessons || [])
-    .filter((l) => !l.deleted && l.type !== "section")
-    .map((l) => stripHtml(l.title))
-    .filter(Boolean);
+  const lessonList = (rise?.lessons || []).filter((l) => !l.deleted && l.type !== "section" && stripHtml(l.title));
+  const lessons = lessonList.map((l) => stripHtml(l.title));
+  // Rise lesson ids, in order: the Career website counts progress against these.
+  const lessonIds = lessonList.map((l) => String(l.id || "")).filter((id) => /^[A-Za-z0-9_-]{1,64}$/.test(id));
   const description = stripHtml(rise?.description);
   const estimate = estimateMinutes(rise);
   const cover = coverPath(contentDir, rise);
@@ -134,6 +134,8 @@ function buildCourse(slug) {
     description: meta.description || description,
     lessons,
     lessonsCount: lessons.length,
+    lessonIds: lessonIds.length === lessons.length ? lessonIds : [],
+    hasQuiz: lessonList.some((l) => l.type === "quiz"),
     launch: `courses/${slug}/${launch}`,
     cover: meta.cover ? `courses/${slug}/${meta.cover}` : cover ? `courses/${slug}/${prefix}${cover}` : null,
     category: meta.category || "Digital Skills",
